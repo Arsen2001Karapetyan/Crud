@@ -7,6 +7,12 @@ function getVal() {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ name: usName.value, password: usPassword.value, email: usEmail.value })
+        body: JSON.stringify({
+            name: usName.value,
+            price: price.value,
+            description: description.value,
+            uuid: uuid.value,
+            image: image.value
+         })
     })
 }
